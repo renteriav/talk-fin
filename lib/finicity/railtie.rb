@@ -14,8 +14,6 @@ module Finicity
           config.partner_secret = yaml_file['partner_secret']
           config.app_key = yaml_file['app_key']
         end
-      else
-        ::Rails.logger.warn("Failed to load finicity.yml")
       end
     end
   end
